@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <!-- forma genérica(uma delas): -->
+    <!-- font-family: sans-serif, serif ,monospace -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas absolutas:
+            cm, mm, in, px*(16 por padrão), tp, pc 
+
+            Medidas relativas:
+            em*(relativo ao M; 16px = 1em), ex(X), rem(relação a confg root *), vw(largura da viwe port(tela)), vh(altura), %
+
+            font-weight (peso da fonte): lighter, normal, bold, bolder; ou 100-900
+
+            font-style: italic
+
+            text-decoration: underline(sublinhado)
+            */
+            font-size: 16px;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+        }
+
+        /* shorthand font, seguir a ordem:
+        f. style -> f.weight -> f.size -> f.family
+        */
+        h2 {
+            font: italic bolder 2em 'Time New Roman', serif
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde officia, itaque aspernatur quisquam quas tenetur hic. Cupiditate quos tempore in, laboriosam et omnis, voluptatem quo sapiente accusamus aspernatur rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iusto amet eveniet asperiores facilis, sit error in est placeat quisquam eum dolorum officiis at tempore! Non modi culpa consequuntur voluptatum!</p>
+    
+    <h2>Subtitulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aut placeat omnis ad, quod dicta ipsam tempore iste. Officiis a optio possimus reiciendis soluta, earum hic odit ducimus. Hic, nihil?</p>
+</body>
+</html>

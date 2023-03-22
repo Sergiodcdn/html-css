@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'mrb';
+    src: url('fonts/MorrisRomanBlackAlt.otf') format('opentype'), url('fonts/MorrisRomanBlackAlt.ttf') format('truetype');
+}
+
+/* 
+    em HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+*/
+
+body {
+    background-color: rgba(39, 189, 72, 0.699);
+    font-family: 'mrb';
+}
+
+h1 {
+    color: rgb(27, 80, 3);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: green;
+    color: yellowgreen;
+}
+
+h2 {
+    color: rgb(32, 150, 77);
+}
+
+.basico {
+    color: rgb(170, 72, 72);
+    font-style: italic;
+}
+
+.intermediario {
+    color: rgb(167, 44, 44);
+    font-style: oblique;
+}
+
+.avancado {
+    color: rgb(168, 21, 21);
+    
+}
+
+.destaque {
+    background-color: #c9c95b88;
+}
