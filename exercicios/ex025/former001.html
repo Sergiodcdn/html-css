@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <p>Ao usar autocomplete="off", desliga a caixa de auxilio de preenchimento</p>
+    <p>Para <strong>PHP e HTML</strong> o <strong>name</strong> é usado de referencia, para <strong>js e uso do label</strong> se usa o <strong>id</strong></p>
+    <p><strong>O label</strong> ajuda em: ao por o mouse no titulo ele joga pra caixa de input</p>
+    <p><strong>method</strong> get e post(tira o conteudo da url), tiram o registro da página que o envio do formulário foi</p>
+    <br>
+    <h2>Formulário</h2>
+    <form action="cadastro.php" method="GET" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
