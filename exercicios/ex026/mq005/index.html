@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols Outlined" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         
@@ -29,10 +30,11 @@
             <h2>Testando Media Queries</h2>
             <p><strong>Menu hamburguinho:</strong></p>
             <ul>
-                <li>Buscar no google web fontes</li>
+                <li>Buscar no google web fontes, o icone do hamburguinho</li>
                 <li>usar o link para tagar os icones: link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /></li>
                 <li>colar o comando: < span class="material-symbols-outlined">& # x E 8 7 D; < />. Sem os espaços.</li>
                 <li>Resulta no simbolo: <span class="material-symbols-outlined">&#xE87D;</span></li>
+                <li>comando JS, com devidas caixas identificadas = GG!</li>
             </ul>
            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae est aliquam velit quam consequatur, facilis aliquid porro cum magnam cumque sint! Maxime, provident! Quaerat aliquid rerum eveniet accusantium veniam perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, temporibus. Ducimus assumenda quibusdam quam nemo at tempora labore doloremque ut? Temporibus odio nesciunt ipsa nobis iusto ipsam natus tempore asperiores?</p>
@@ -44,6 +46,14 @@
     </main>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
