@@ -1,0 +1,79 @@
+/* padronizar documentos - cross browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: rgb(233, 181, 113);
+    /* faz com que as divs se comportem em linhas */
+    display: flex;
+    /* determina o eixo principal do flexblox, padrão row */
+    flex-direction: row;
+    /* faz os elementos ocuparem o espaço anunciado pela width em % */
+    /* flex-wrap: wrap; */
+    /* flex-flow: f.direction f.w;
+    /* com uma altura do conteiner flex box, se sobrar há marcação de sua abrangencia */
+    height: 500px;
+    /* permite definir os elem. flebox no eixo principal */
+    justify-content: space-evenly;
+    /* muda alinhamento no eixo cruzado */
+    /* usado se a altura das divs não for explicitada */
+    align-items: center;
+    align-content: stretch;
+}
+
+div {
+    /* height: 120px; */
+    /* width: 120px; */
+    /* width: 30%; */
+    border: dotted 2px black;
+    font-size: 60px;
+    text-align: center;
+    line-height: 120px;
+}
+
+#div1, #div3, #div7 {
+    /* height: 150px; */
+}
+
+/* as divs se auto ajustam para ocupar largura máx */
+div {
+    flex-grow: 1;
+}
+
+#div3 {
+    flex-grow: 2;
+}
+
+#div5 {
+    flex-grow: .5;
+}
+
+/* diminui a div, todavia a largura tem de ser explicita anteriormente */
+#div6 {
+    flex-shrink: 2;
+}
+
+/* para um item ter tamanho fixo */
+#div4 {
+/*
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px; */
+    flex: 0 0 200px;
+    align-self: flex-end;
+}
+
+/* muda ordem das divs manualmente 
+#div1 { order: 3 ; }
+#div2 { order: 5 ; }
+#div3 { order: 2 ; }
+#div4 { order: 1 ; }
+#div5 { order: 7 ; }
+#div6 { order: 4 ; }
+#div7 { order: 6 ; }
+
+*/

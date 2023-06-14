@@ -1,0 +1,39 @@
+body {
+    background-color: #1F0318;
+    margin: 10px;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+}
+
+.container > div:nth-child(1n) {
+    background-color: #E5F2C9;
+}
+
+.container > div:nth-child(2n) {
+    background-color: #7F534B;
+    color: white;
+
+}
+
+.container > div:nth-child(3n) {
+    background-color: #8C705F;
+}
+
+.container > div:nth-child(4n) {
+    background-color: #1E1A1D;
+    color: white;
+}
+
+.container {
+    display: grid;
+/*     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50px); */
+    grid-template: repeat(2, 50px) / repeat(3, 1fr);
+    gap: 10px;
+}

@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 95vw;
+    margin: 0 top;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15vh 65vh 20vh;
+}
+
+header, nav, article, footer {
+    padding: 20px;
+    color: rgb(136, 136, 204);
+    font-size: 2rem;
+    border: 5px solid blueviolet;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: black;
+    grid-column: span 12;
+}
+
+nav {
+    background-color: rgb(223, 65, 44);
+    grid-column: span 3;
+}
+
+article {
+    background-color: rgb(155, 82, 223);
+    grid-column: span 9;
+}
+
+footer {
+    background-color: black;
+    grid-column: span 12;
+}
